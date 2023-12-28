@@ -1,0 +1,3 @@
+.slider::-moz-range-thumb {
+  @apply w-4 h-4 border-0 bg-mint-400;
+}
