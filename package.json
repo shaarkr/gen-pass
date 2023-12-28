@@ -1,8 +1,17 @@
 {
-  "name": "password-generator",
+  "name": "gen-pass",
+  "description": "GenPass is an elegant password generator crafted with React and styled using Tailwind CSS. Empower yourself to generate secure passwords with personalized options.",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "packageManager": "yarn@1.22.19",
+  "engines": {
+    "node": "^18.12.1",
+    "vscode": "^1.22.0"
+  },
+  "repository": {
+    "url": "https://github.com/shaarkr/gen-pass.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -26,5 +35,18 @@
     "prettier": "3.1.1",
     "tailwindcss": "^3.4.0",
     "vite": "^5.0.8"
-  }
+  },
+  "author": {
+    "email": "sharathkr@pm.me",
+    "name": "shaarkr"
+  },
+  "license": "MIT",
+  "keywords": [
+    "password",
+    "generator",
+    "react",
+    "chai-aur-code",
+    "tailwindcss",
+    "genpass"
+  ]
 }
