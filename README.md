@@ -2,33 +2,81 @@
 
 ## Overview
 
-GenPass is an elegant password generator crafted with React and styled using Tailwind CSS. Empower yourself to generate secure passwords with personalized options.
+GenPass is an intuitive and feature-rich password generator built with React and styled using Tailwind CSS. Generate strong and personalized passwords effortlessly with user-friendly features.
+
+## Live Demo
+
+Explore the live demo: [GenPass Live Demo](https://genpass-wm.netlify.app/)
+
+## Deployment Status
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/324ed81d-6c10-470a-aa98-6b2f7e20e571/deploy-status)](https://app.netlify.com/sites/genpass-wm/deploys)
 
 ## Features
 
-- Adjustable password length
-- Options to include uppercase, lowercase, numbers, and symbols
-- Visual password strength indicator
-- Easy copy-to-clipboard functionality
+- **Adjustable Password Length:** Choose the length of your password according to your security requirements.
+- **Customizable Criteria:** Include or exclude uppercase, lowercase, numbers, and symbols based on your preferences.
+- **Visual Password Strength Indicator:** Easily assess the strength of your generated password.
+- **One-Click Copy:** Quickly copy your generated password to the clipboard with a single click.
+
+## Screenshots
+
+<img src="./screenshots/genpass.png" alt="GenPass Widget" height="250" />
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/shaarkr/gen-pass.git`
-2. Navigate to the project directory: `cd gen-pass`
-3. Install dependencies using Yarn: `yarn install`
-4. Start the development server: `yarn dev`
-5. Open your browser and go to `http://localhost:3000`
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/shaarkr/gen-pass.git
+   ```
+
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd gen-pass
+   ```
+
+3. **Install dependencies using Yarn:**
+
+   ```bash
+   yarn install
+   ```
+
+4. **Start the development server:**
+
+   ```bash
+   yarn dev
+   ```
+
+5. **Open your browser and go to:**
+
+   ```bash
+   http://localhost:3000
+   ```
 
 ## Usage
 
-1. Customize your password criteria.
-2. Click "Generate" to create a secure password.
-3. Easily copy the generated password using the copy icon.
+1. **Customize Your Password:**
+
+   - Adjust the password length slider.
+   - Toggle options for uppercase, lowercase, numbers, and symbols.
+
+2. **Generate a Secure Password:**
+
+   - Click the "Generate" button to create a strong and secure password.
+
+3. **Visual Strength Indicator:**
+
+   - Check the visual indicator to assess the strength of your password.
+
+4. **Copy to Clipboard:**
+   - Easily copy the generated password using the copy icon.
 
 ## Project Structure
 
-- `src/components`: React components for a modular structure.
-- `src/utils`: Includes utility functions, such as password strength checking.
+- `src/components`: Modular React components for maintainability.
+- `src/utils`: Utility functions, including password strength checking.
 - `tailwind.config.js`: Configuration file for Tailwind CSS.
 
 ## Scripts
@@ -46,7 +94,7 @@ GenPass is an elegant password generator crafted with React and styled using Tai
 
 ## Contributing
 
-Contribute by opening issues or submitting pull requests. Your input is valued!
+Contribute by opening issues, submitting pull requests, or providing feedback. Your input is highly appreciated!
 
 ## License
 
