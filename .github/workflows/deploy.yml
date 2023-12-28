@@ -1,0 +1,30 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4.0.1
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Run deployment script
+        run: ./deploy.sh
+
+      - name: Deploy to GitHub Pages
+        run: gh pages --dist build --branch gh-pages --add
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
