@@ -2,8 +2,11 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - master
+    branches: ['master']
+  pull_request:
+    branches: ['master']
+
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -21,10 +24,19 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
+      - name: Set execution permission for deploy.sh
+        run: chmod +x deploy.sh
+
       - name: Run deployment script
         run: ./deploy.sh
 
       - name: Deploy to GitHub Pages
-        run: gh pages --dist build --branch gh-pages --add
+        run: |
+          git checkout -b gh-pages
+          git rm -rf .
+          cp -r dist/* .
+          git add .
+          git commit -m "Deploy to GitHub Pages"
+          git push origin gh-pages
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
